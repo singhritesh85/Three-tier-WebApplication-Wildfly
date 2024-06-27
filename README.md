@@ -22,7 +22,11 @@ Then look for the file :
 - accountsdb.sql file is a mysql dump file.we have to import this dump to mysql db server
 - > mysql -u <user_name> -p accounts < accountsdb.sql
 
-
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
 ```
 Original Repository:-    https://github.com/logicopslab/vprofile-project.git
 ```
