@@ -1,8 +1,6 @@
-FROM tomcat:8-jre8 
+FROM jboss/wildfly:10.1.0.Final
+#FROM tomcat:8-jre8 
 
 MAINTAINER "DevOps Team"
 
-COPY ./pasco/manager/META-INF/context.xml /usr/local/tomcat/webapps.dist/host-manager/META-INF/context.xml
-COPY ./pasco/manager/META-INF/context.xml /usr/local/tomcat/webapps.dist/manager/META-INF/context.xml
-
-COPY ./target/vprofile-v2.war /usr/local/tomcat/webapps/ROOT.war
+COPY ./target/vprofile-v2.war /opt/jboss/wildfly/standalone/deployments/ROOT.war
